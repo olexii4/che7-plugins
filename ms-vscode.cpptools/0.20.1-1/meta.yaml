@@ -1,9 +1,0 @@
-id: ms-vscode.cpptools
-version: 0.20.1
-type: VS Code extension
-name: C/C++ tools
-title: C/C++ tools
-description: C/C++ IntelliSense, debugging, and code browsing https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
-icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
-attributes:
-  extension: "vscode:extension/ms-vscode.cpptools"
