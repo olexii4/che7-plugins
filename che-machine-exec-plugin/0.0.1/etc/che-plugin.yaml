@@ -1,6 +1,6 @@
 endpoints:
  -  name: "che-machine-exec"
-    public: false
+    public: true
     targetPort: 4444
     attributes:
       protocol: ws
