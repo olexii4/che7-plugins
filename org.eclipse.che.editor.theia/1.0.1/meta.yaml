@@ -1,5 +1,5 @@
 id: org.eclipse.che.editor.theia
-version: 1.0.0
+version: 1.0.1
 type: Che Editor
 name: theia-ide
 title: Eclipse Theia for Eclipse Che
