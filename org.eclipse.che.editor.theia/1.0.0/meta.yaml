@@ -1,5 +1,5 @@
 id: org.eclipse.che.editor.theia
-version: master
+version: 1.0.0
 type: Che Editor
 name: theia-ide
 title: Eclipse Theia GDB development version
