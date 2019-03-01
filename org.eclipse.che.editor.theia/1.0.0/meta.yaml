@@ -1,8 +1,12 @@
 id: org.eclipse.che.editor.theia
-version: 1.0.0
+version: master
 type: Che Editor
 name: theia-ide
-title: Eclipse Theia for Eclipse Che
-description: Eclipse Theia
+title: Eclipse Theia GDB development version
+description: Eclipse Theia, get the latest release each day GDB development version
 icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
 url: https://github.com/olexii4/che7-plugins/releases/download/1.0/che-editor-plugin.tar.gz
+publisher: Red Hat, Inc.
+category: Editor
+repository: https://github.com/olexii4/che7-plugins
+firstPublicationDate: "2019-03-01"

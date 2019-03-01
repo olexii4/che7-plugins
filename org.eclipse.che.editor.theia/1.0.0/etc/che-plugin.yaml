@@ -3,8 +3,8 @@ type: Che Editor
 name: theia-ide
 id: org.eclipse.che.editor.theia
 title: Eclipse Theia for Eclipse Che
-Description: Eclipse Theia
-Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
+description: Eclipse Theia
+icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
 endpoints:
  -  name: "theia"
     public: true
@@ -14,12 +14,14 @@ endpoints:
       type: ide
       secure: true
       cookiesAuthEnabled: true
+      discoverable: false
  -  name: "theia-dev"
     public: true
     targetPort: 3130
     attributes:
       protocol: http
       type: ide-dev
+      discoverable: false
 containers:
  - name: theia-ide
    image: olexii4dockerid/che-theia:test
@@ -39,3 +41,4 @@ containers:
        - exposedPort: 3100
        - exposedPort: 3130
    memory-limit: "1536M"
+   memoryLimit: "1536M"
