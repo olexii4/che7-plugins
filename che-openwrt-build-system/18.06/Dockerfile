@@ -13,16 +13,9 @@ USER openwrt
 
 WORKDIR /home/openwrt
 
-RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-18.06
-
-RUN /home/openwrt/openwrt/scripts/diffconfig.sh > /home/openwrt/openwrt/configdiff
-
-ADD etc/openwrt/.config /home/openwrt/openwrt/.config
-
-RUN sudo chmod -f 777 /home/openwrt/openwrt/.config
-
-RUN cd /home/openwrt/openwrt && make defconfig && make oldconfig && ./scripts/feeds update -a  && ./scripts/feeds install -a
-
-# RUN cd /home/openwrt/openwrt && make -j2 V=s
+RUN git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-18.06 &&\
+    cd /home/openwrt/openwrt &&\
+    ./scripts/feeds update -a  &&\
+    ./scripts/feeds install -a
 
 ENTRYPOINT tail -f /dev/null
