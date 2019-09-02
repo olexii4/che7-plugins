@@ -7,5 +7,6 @@ name: AsciiDoc
 title: AsciiDoc
 description: AsciiDoc Support, and code browsing https://marketplace.visualstudio.com/items?itemName=stayfool.vscode-asciidoc
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
-attributes:
-  extension: "vscode:extension/stayfool.vscode-asciidoc"
+spec:
+  extensions:
+  - https://github.com/olexii4/che7-plugins/releases/download/1.0.1/stayfool.vscode-asciidoc-0.0.3.vsix
