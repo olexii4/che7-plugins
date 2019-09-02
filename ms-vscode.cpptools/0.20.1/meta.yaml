@@ -1,6 +1,7 @@
+publisher: ms-vscode
+apiVersion: v2
 id: ms-vscode.cpptools
 version: 0.20.1
-publisher: ms-vscode
 type: VS Code extension
 name: C/C++ tools
 title: C/C++ tools

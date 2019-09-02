@@ -1,3 +1,5 @@
+publisher: ms-vscode
+apiVersion: v2
 id: ms-vscode.cpptools
 version: 0.20.1
 type: VS Code extension

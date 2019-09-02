@@ -1,6 +1,7 @@
+publisher: stayfool
+apiVersion: v2
 id: stayfool.vscode-asciidoc
 version: 2.7.6
-publisher: stayfool
 type: VS Code extension
 name: AsciiDoc
 title: AsciiDoc
