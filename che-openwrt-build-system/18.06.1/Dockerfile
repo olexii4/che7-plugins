@@ -11,11 +11,6 @@ RUN useradd -m openwrt &&\
 
 USER openwrt
 
-RUN cd /home/openwrt && git clone git://git.openwrt.org/openwrt/openwrt.git -b openwrt-18.06 &&\
-    cd openwrt && ./scripts/feeds update -a  && ./scripts/feeds install -a
-
-ADD etc/.config /home/openwrt/openwrt/.config
-
-RUN cd /home/openwrt/openwrt && sudo chmod -f 777 .config && make defconfig && make -j1 V=s
+COPY etc/openwrt /home/openwrt
 
 ENTRYPOINT tail -f /dev/null

@@ -1,0 +1,10 @@
+id: stayfool.vscode-asciidoc
+version: 2.7.6
+publisher: stayfool
+type: VS Code extension
+name: AsciiDoc
+title: AsciiDoc
+description: AsciiDoc Support, and code browsing https://marketplace.visualstudio.com/items?itemName=stayfool.vscode-asciidoc
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+attributes:
+  extension: "vscode:extension/stayfool.vscode-asciidoc"
