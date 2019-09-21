@@ -1,0 +1,41 @@
+apiVersion: v2
+publisher: che-incubator
+name: jenkins-server
+version: latest
+type: Che Plugin
+displayName: Che Jenkins Server Plugin
+title: Che Jenkins Server Plugin
+description: Che Jenkins Server Plugin
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/che-incubator/che-theia-dev-plugin/
+firstPublicationDate: "2019-10-10"
+category: Other
+spec:
+  endpoints:
+   -  name: "jenkins-server"
+      public: true
+      targetPort: 8080
+      attributes:
+        protocol: http
+   -  name: "slave-agent-port"
+      public: true
+      targetPort: 5000
+      attributes:
+        protocol: ws
+  containers:
+   - name: jenkins
+     image: "jenkins/jenkins"
+     volumes:
+         - mountPath: "/var/jenkins_home"
+           name: jenkins_home
+     commands:
+       - name: "admin password"
+         command: ["cat", "-a"]
+       - name: uname
+         workingDir: "$(project)"
+         command: ["uname", "/var/jenkins_home/secrets/initialAdminPassword"]
+     mountSources: true
+     ports:
+       - exposedPort: 8080
+       - exposedPort: 5000
+     memoryLimit: "2Gi"

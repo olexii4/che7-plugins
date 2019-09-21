@@ -1,12 +1,13 @@
-publisher: stayfool
+publisher: joaompinto
 apiVersion: v2
-id: stayfool.vscode-asciidoc
 version: 2.7.6
 type: VS Code extension
-name: AsciiDoc
-title: AsciiDoc
-description: AsciiDoc Support, and code browsing https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode
+name: vscode-asciidoctor
+displayName: AsciiDoc support
+title: AsciiDoctor Plugin.
+description: This extension provides a live preview, syntax highlighting and snippets for the AsciiDoc format using Asciidoctor flavor.
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/asciidoctor/asciidoctor-vscode
 spec:
   extensions:
-  - https://github.com/olexii4/che7-plugins/releases/download/1.0.1/asciidoctor-vscode-2.7.6.vsix
+  - https://marketplace.visualstudio.com/_apis/public/gallery/publishers/joaompinto/vsextensions/asciidoctor-vscode/2.7.6/vspackage
