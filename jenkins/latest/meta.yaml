@@ -30,10 +30,10 @@ spec:
            name: jenkins_home
      commands:
        - name: "admin password"
-         command: ["cat", "-a"]
+         command: ["cat", "/var/jenkins_home/secrets/initialAdminPassword"]
        - name: uname
          workingDir: "$(project)"
-         command: ["uname", "/var/jenkins_home/secrets/initialAdminPassword"]
+         command: ["uname", "-a"]
      mountSources: true
      ports:
        - exposedPort: 8080
